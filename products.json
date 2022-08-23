@@ -1,59 +1,85 @@
-[
-    {
-        "id": 1, 
-        "title": "Sushi salad", 
-        "price": 800, 
-        "image": "https://i.ibb.co/HnN8PfR/product-1.jpg"
-    },
 
-    {
-        "id": 2, 
-        "title": "Pasta", 
-        "price": 400, 
-        "image": "https://i.ibb.co/N9mmNnz/product-2.jpg"
-    },
+ [
+    {"id": 1, 
+    "title": "Relaxed Fit Hoodie", 
+    "price": 4500, 
+    "image": "hoodie.jpg"}, 
 
-    {
-        "id": 3, 
-        "title": "Sopa", 
-        "price": 400, 
-        "image": "https://i.ibb.co/d7Phvnf/product-3.jpg"
-    },
 
-    {
-        "id": 4, 
-        "title": "Avocado toast", 
-        "price": 600, 
-        "image": "https://i.ibb.co/tbNgSD2/product-4.jpg"
-    },
+   {"id": 2, 
+    "title": "Relaxed-fit  Sweatshirt", 
+    "price": 4500, 
+    "image": "./images/Relaxed-fit-Washed-look-Sweatshirt-negro.jpg"},
+   
+   {"id": 3, 
+    "title": "Skinny Jeans", 
+    "price": 6500, 
+    "image": "./images/Skinny-Jeans.jpg"},
 
-    {
-        "id": 5, 
-        "title": "Paella", 
-        "price": 800, 
-        "image": "https://i.ibb.co/NmJDgbY/product-5.jpg"
-    },
+   {"id": 4, 
+    "title": "Slim  Cropped Jeans", 
+    "price": 7500, 
+    "image": "./images/Slim-Jeans-azul.jpg"},
+   
+   {"id": 5, 
+    "title": "Relaxed Fit T-shirt", 
+    "price": 5500, 
+    "image": "../images/Relaxed-Fit-T-shirt.jpg"},
 
-    {
-        "id": 6, 
-        "title": "Salmón rosado", 
-        "price": 800, 
-        "image": "https://i.ibb.co/3FNGCJ2/product-6.jpg"
-    },
+   {"id": 6, 
+    "title": "Relaxed Fit Cotton T-shirts", 
+    "price": 4500, 
+    "image": "../images/Relaxed-Fit-Cotton-T-shirt.jpg"},
+   
+   {"id": 7, 
+    "title": "Sneakers", 
+    "price": 15500, 
+    "image": "./images/Canvas-Sneakers-blancas.jpg"},
 
-    {
-        "id": 7, 
-        "title": "Ensalada", 
-        "price": 600, 
-        "image": "https://i.ibb.co/dPJ7JCV/product-7.jpg"
-    },
+   {"id": 8, 
+    "title": "Canvas High Tops",
+    "price": 16500, 
+    "image": "../images/Canvas-High-Tops.jpg"},
 
-    {
-        "id": 8, 
-        "title": "Pizza", 
-        "price": 600, 
-        "image": "https://i.ibb.co/nRbr0G3/product-8.jpg"
-    }
+    {"id": 9, 
+    "title": "Relaxed Fit Hoodie", 
+    "price": 4500, 
+    "image": "./images/Regular-Fit-Printed-Hoodie-gris.jpg"}, 
+    
+    
+    {"id": 10, 
+    "title": "Relaxed-fit  Sweatshirt", 
+    "price": 4500, 
+    "image": "./images/Relaxed-fit-Washed-look-Sweatshirt-gris.jpg"},
+       
+    {"id": 11, 
+    "title": "Skinny Jeans", 
+    "price": 6500, 
+    "image": "./images/Slim-Tapered-Cropped-Jeans-negro.jpg"},
+    
+    {"id": 12, 
+    "title": "Slim  Cropped Jeans", 
+    "price": 7500, 
+    "image": "./images/Slim-Jeans.jpg"},
+       
+    {"id": 13, 
+    "title": "Relaxed Fit T-shirt", 
+    "price": 5500, 
+    "image": "./images/Relaxed-Fit-Printed-T-shirt-naranja.jpg"},
+    
+    {"id": 14, 
+    "title": "Relaxed Fit Cotton T-shirts", 
+    "price": 4500, 
+    "image": "./images/Relaxed-Fit-T-shirt-celeste.jpg"},
+       
+    {"id": 15, 
+    "title": "Sneakers", 
+    "price": 15500, 
+    "image": "./images/Canvas-Sneakers-mostaza.jpg"},
+    
+    {"id": 16, 
+    "title": "Canvas High Tops",
+    "price": 16500, 
+    "image": "./images/Canvas-High-Tops-azul.jpg"}
+
 ]
-   
-   
