@@ -196,7 +196,7 @@ const mercadopago = async () => {
         let response = await fetch("https://api.mercadopago.com/checkout/preferences", {
             method: "POST",
             headers: {
-                Authorization: "Bearer TEST-3ef80963-f029-4284-8803-a7b57bd3969e"
+                Authorization: "Bearer TEST-440207383957120-081711-fc59223c52fe00af81bc653e4502d886-396230180"
             },
             body: JSON.stringify({
                 items: cartSummaryToMap,
