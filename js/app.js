@@ -34,14 +34,13 @@ const displayProducts = products => {
        
         <div class="img-container" id="products">
             <img src=${product.image} alt="Producto" class="product-img">
-            
         </div>
         <h3>${product.title}</h3>
         <h4>$${product.price}
         <button class="bag-btn" data-id=${product.id}>
-                <i class="fa-solid fa-cart-shopping"></i>
-                Agregar al carrito
-            </button>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Agregar al carrito
+        </button>
         </h4>
         
         `;
@@ -60,7 +59,7 @@ const getButtons = () => {
             btn.disabled = true;
         } 
         btn.addEventListener("click", e => {
-            e.target.innerText = "Agregado";
+            e.target.innerText = "¡Agregado!";
             e.target.disabled = true;
             let cartItem = {...getProduct(id), amount: 1}; 
             cart = [...cart, cartItem];

@@ -1,4 +1,3 @@
-//variables
 const inputs = [...document.querySelectorAll(".input")]; 
 const checkoutInfo = document.querySelector(".checkout-info");
 const checkoutTotal = document.querySelector(".checkout-total"); 
@@ -20,7 +19,7 @@ const displayCartSummary = cartSummary => {
         let div = document.createElement("div");
         div.className = "cart-item";
         div.innerHTML = `
-        <img src="${item.image}" alt="Producto">
+
         <div>
             <h4>${item.title}</h4>
             <h5>$${item.price}</h5>
@@ -45,10 +44,6 @@ const setupCheckout = () => {
     setCheckoutTotal(cartSummary);
 }
 
-//house or flat
-
-
-//check form validity
 const validateForm = () => {
     form.noValidate = true;
     form.addEventListener("submit", e => {
@@ -58,12 +53,12 @@ const validateForm = () => {
         });
         if (form.checkValidity()) {
             swal({
-                title: "Te estamos redirigiendo a Mercado Pago",
-                text: "¡Gracias por elegirnos!",
+                title: "Estas siendo redirigido a Mercado Pago",
+                text: "¡Gracias por elegirnos, que tengas una muy buena experiencia!",
                 button: false
             }).then(setTimeout(() => {
                 mercadopago();
-            }, 3000));
+            }, 2000));
         }
     });
     inputs.forEach(input => {
@@ -74,7 +69,6 @@ const validateForm = () => {
 }
 
 const checkInputs = input => {
-    //variables
     const emailValue = email.value.trim();
     const firstnameValue = firstname.value.trim();
     const lastnameValue = lastname.value.trim();
@@ -82,12 +76,9 @@ const checkInputs = input => {
     const phoneValue = phone.value.trim();
     const streetValue = street.value.trim();
     const numberValue = number.value.trim();
-
-    //regex
     const lettersPattern = /^[A-ZÀ-Ú]+$/i;
     const numbersPattern = /^[0-9]+$/;
 
-    //logic
     switch (input) {
         case email:
             if (emailValue === "") {
@@ -166,10 +157,8 @@ const checkInputs = input => {
     }
 }
 
-//validate email
 const isEmail = email => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 
-//success-error messages
 const setErrorFor = (input, message) => {
     const formControl = input.parentElement;
     const small = formControl.querySelector("small");
@@ -189,14 +178,12 @@ const setErrorForPhone = (input, message) => {
     small.innerText = message;
 }
 
-//payment
 const mercadopago = async () => {
     const cartSummaryToMap = cartSummary.map(item => {
         let newItem =     
         {
             title: item.title,
             description: "",
-            picture_url: item.image,
             category_id: item.id,
             quantity: item.amount,
             currency_id: "ARS",
@@ -209,7 +196,7 @@ const mercadopago = async () => {
         let response = await fetch("https://api.mercadopago.com/checkout/preferences", {
             method: "POST",
             headers: {
-                Authorization: "TEST-440207383957120-081711-fc59223c52fe00af81bc653e4502d886-396230180"
+                Authorization: "Bearer TEST-3ef80963-f029-4284-8803-a7b57bd3969e"
             },
             body: JSON.stringify({
                 items: cartSummaryToMap,
@@ -228,8 +215,6 @@ const mercadopago = async () => {
     }
 }
 
-//execution
+
 setupCheckout();
 validateForm();
-
-
