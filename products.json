@@ -39,7 +39,7 @@
    {"id": 8, 
     "title": "Canvas High Tops",
     "price": 16500, 
-    "image": "../images/Canvas-High-Tops.jpg"},
+    "image": "./images/Canvas-High-Tops.jpg"},
 
     {"id": 9, 
     "title": "Relaxed Fit Hoodie", 
